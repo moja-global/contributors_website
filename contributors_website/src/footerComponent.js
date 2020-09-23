@@ -60,9 +60,17 @@ const useStyles = makeStyles((theme) => ({
 const footers = [
   {
     title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Documentation'],
-  },
-];
+    description: ['Team',
+     'History',
+     'Contact us',
+     'Documentation',],
+
+     links:['https://github.com/moja-global/About_moja_global',
+     'https://moja.global/about-moja-global-2-2-2-2/',
+     'mailto:info@moja.global',
+     'https://moja-global-documentation.readthedocs.io/en/latest/']
+}
+  ];
 
 export default function FooterComponent() {
   const classes = useStyles();
@@ -94,9 +102,10 @@ export default function FooterComponent() {
           {footer.title}
         </Typography>
         <List>
-          {footer.description.map((item) => (
+          {footer.description.map((item,index) => (
+            
             <ListItem key={item}>
-              <Link href="#" color="inherit">
+                <Link href={footer.links[index]}  color="inherit">
                 {item}
               </Link>
             </ListItem>
