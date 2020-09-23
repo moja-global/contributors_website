@@ -2,8 +2,8 @@ import React from 'react';
 import { makeStyles,withStyles } from '@material-ui/core/styles';
 import {Paper,Grid,Button} from '@material-ui/core';
 import CustomButton from './CustomComponents/CustomButton';
-import Linux from './images/linux.png';
-import Gsoc from './images/gsoc.png';
+//import Linux from './images/linux.png';
+//import Gsoc from './images/gsoc.png';
 import Oss from './images/oss.png';
 import Image from 'material-ui-image';
 
